@@ -1,9 +1,10 @@
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from utils.similarity import cosine_similarity  # Utility function for cosine similarity
+from utils.similarity import cosine_similarity 
+from settings import Settings
 
 class PDFClassifier:
-    def __init__(self, model_name="all-MiniLM-L6-v2"):
+    def __init__(self, model_name=Settings.model):
         self.model = SentenceTransformer(model_name)
         self.labeled_documents = self.load_labeled_documents()
         self.labeled_embeddings = self.compute_labeled_embeddings()

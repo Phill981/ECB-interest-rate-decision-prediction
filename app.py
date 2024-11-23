@@ -1,7 +1,6 @@
 import streamlit as st
-import os
 from utils.similarity import calculate_cosine_similarity
-import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 
 # Your other Streamlit app code
 def main():
@@ -30,11 +29,6 @@ def main():
 
         # Plot the similarity chart
         plot_similarity_chart(similarity_results)
-
-
-# Plot Cosine Similarity Scores
-import plotly.graph_objects as go
-import plotly.express as px
 
 # Plot Cosine Similarity Scores with Plotly (Interactive & Colorful)
 def plot_similarity_chart(similarity_results):
@@ -67,11 +61,8 @@ def plot_similarity_chart(similarity_results):
         template='plotly_white',  # Use Plotly's clean white template
         margin=dict(l=50, r=50, t=50, b=50),  # Adjust margins
     )
-
     # Display the plot in Streamlit
     st.plotly_chart(fig)
-
-
 
 # Function to extract text from the uploaded PDF
 def extract_text_from_pdf(pdf_file):
@@ -82,7 +73,6 @@ def extract_text_from_pdf(pdf_file):
         for page in pdf.pages:
             text += page.extract_text()
     return text
-
 
 if __name__ == "__main__":
     main()
