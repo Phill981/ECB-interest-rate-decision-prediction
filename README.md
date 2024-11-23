@@ -20,10 +20,12 @@ To run the app, simply install the requirements and start the Streamlit server:
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
-
+```
 
 ### How to Run the App:
 1. Clone the repository or create the files in your project.
 2. Install the dependencies by running:
-   ```bash
-   pip install -r requirements.txt
+   
+```bash
+pip install -r requirements.txt
+```
