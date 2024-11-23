@@ -1,6 +1,6 @@
-# PDF Classification and Similarity Comparison App
+# ECB interest rate decision prediction
 
-This Streamlit app classifies PDFs based on semantic similarity using pre-trained transformer models. It extracts text from PDFs and compares them to labeled datasets to classify and evaluate their similarity.
+This program analyses ECB statements that are labled depending if somewhen afterwards interest rates increased or decreased. Based on language similarities, the model will then predict the next ECB decision regarding interest rates.
 
 ### Features:
 - Upload multiple PDFs and compare their content with labeled PDFs
