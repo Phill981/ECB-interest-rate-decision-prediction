@@ -1,0 +1,6 @@
+streamlit==1.25.0
+pdfplumber==0.9.0
+sentence-transformers==2.2.2
+transformers==4.35.0
+torch==2.0.1
+numpy>=1.23.5
