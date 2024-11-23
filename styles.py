@@ -5,7 +5,7 @@ def set_page_style():
     Applies custom Streamlit page styles.
     """
     st.set_page_config(
-        page_title="PDF Language Classifier",
+        page_title="Central Bank interest rate decision prediction",
         page_icon="📄",
         layout="centered"
     )
