@@ -1,7 +1,7 @@
-import numpy as np
-from sentence_transformers import SentenceTransformer
-from utils.similarity import cosine_similarity 
-from settings import Settings
+import numpy as np #type: ignore
+from sentence_transformers import SentenceTransformer #type: ignore
+from utils.similarity import cosine_similarity #type: ignore
+from settings import Settings #type: ignore
 
 class PDFClassifier:
     def __init__(self, model_name=Settings.model):

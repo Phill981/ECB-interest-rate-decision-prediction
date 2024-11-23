@@ -1,6 +1,6 @@
-import streamlit as st
-from utils.similarity import calculate_cosine_similarity
-import plotly.graph_objects as go
+import streamlit as st#type: ignore
+from utils.similarity import calculate_cosine_similarity#type: ignore
+import plotly.graph_objects as go #type: ignore
 
 # Your other Streamlit app code
 def main():
@@ -67,7 +67,7 @@ def plot_similarity_chart(similarity_results):
 # Function to extract text from the uploaded PDF
 def extract_text_from_pdf(pdf_file):
     # You can use PyPDF2 or pdfplumber to extract text from the PDF
-    import pdfplumber
+    import pdfplumber #type: ignore
     with pdfplumber.open(pdf_file) as pdf:
         text = ""
         for page in pdf.pages:

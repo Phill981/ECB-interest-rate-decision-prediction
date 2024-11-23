@@ -1,5 +1,5 @@
-from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
+from sentence_transformers import SentenceTransformer #type: ignore
+from sklearn.metrics.pairwise import cosine_similarity #type: ignore
 
 # Calculate Cosine Similarity
 def calculate_cosine_similarity(text, labeled_documents):
