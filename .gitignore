@@ -8,6 +8,8 @@ __pycache__/
 
 .DS_Store
 
+/temp/*.pdf
+
 # Distribution / packaging
 .Python
 build/
