@@ -29,3 +29,12 @@ streamlit run app.py
 ```bash
 pip install -r requirements.txt
 ```
+
+
+### Upcoming
+
+| Task    | Progress |
+| -------- | ------- |
+| More efficient model  | In progress    |
+| Scraping ECB website for automasation of the progress | Planned     |
+| Add holding periodes (neither increase or decrease)    | Planned    |
