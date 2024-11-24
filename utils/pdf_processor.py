@@ -5,11 +5,10 @@ class PDFProcessor:
         pass
 
     def extract_text(self, pdf_path):
-        # Open the PDF with PyMuPDF
         doc = fitz.open(pdf_path)
         text = ""
         for page in doc:
-            text += page.get_text("text")  # Extract text from each page
+            text += page.get_text("text")
         return text
 
     def get_summary(self, text, num_sentences=3):

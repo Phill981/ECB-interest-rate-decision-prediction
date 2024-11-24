@@ -1,4 +1,3 @@
-import numpy as np #type: ignore
 from sentence_transformers import SentenceTransformer #type: ignore
 from utils.similarity import cosine_similarity #type: ignore
 from settings import Settings #type: ignore
@@ -10,7 +9,6 @@ class PDFClassifier:
         self.labeled_embeddings = self.compute_labeled_embeddings()
 
     def load_labeled_documents(self):
-        # Example labeled data (replace with your actual data)
         labeled_documents = [
             {"text": "Monetary policy decisions", "label": "increase"},
             {"text": "Economic contraction policy", "label": "decrease"}
@@ -18,18 +16,14 @@ class PDFClassifier:
         return labeled_documents
 
     def compute_labeled_embeddings(self):
-        # Compute and store embeddings for labeled documents once
         labeled_texts = [doc["text"] for doc in self.labeled_documents]
         return self.model.encode(labeled_texts)
 
     def classify_pdf(self, file_path, pdf_processor):
-        # Extract text from PDF
         text = pdf_processor.extract_text(file_path)
 
-        # Compute embedding for the extracted text
         text_embedding = self.model.encode([text])[0]
 
-        # Compute cosine similarity with precomputed labeled embeddings
         best_match = self.get_best_match(text_embedding)
         return best_match
 
