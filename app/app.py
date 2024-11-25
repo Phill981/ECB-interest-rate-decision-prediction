@@ -54,7 +54,6 @@ def plot_similarity_chart(similarity_results):
     )
     st.plotly_chart(fig)
 
-# Function to extract text from the uploaded PDF
 def extract_text_from_pdf(pdf_file):
     import pdfplumber #type: ignore
     with pdfplumber.open(pdf_file) as pdf:
